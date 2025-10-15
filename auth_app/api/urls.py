@@ -1,9 +1,15 @@
+# Standard library
+from typing import Any
+
+# Third-party
 from django.urls import path
-from . import views
+
+# Local imports
+from .views import UserRegistrationView, UserLoginView, UserLogoutView, UserProfileView
 
 urlpatterns = [
-    path('register/', views.register, name='auth_register'),
-    path('login/', views.login, name='auth_login'),
-    path('logout/', views.logout, name='auth_logout'),
-    path('profile/', views.profile, name='auth_profile'),
+    path('registration/', UserRegistrationView.as_view(), name='user_registration'),
+    path('login/', UserLoginView.as_view(), name='user_login'),
+    path('logout/', UserLogoutView.as_view(), name='user_logout'),
+    path('profile/', UserProfileView.as_view(), name='user_profile'),
 ]
