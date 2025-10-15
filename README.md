@@ -5,7 +5,7 @@
 Das Projekt wurde entsprechend den Anforderungen umstrukturiert:
 
 ### Hauptprojekt
-- **core** - Das Hauptprojekt (früher `kanmind_backend`)
+- **core** - Das Hauptprojekt
   - `settings.py` - Django-Einstellungen
   - `urls.py` - Haupt-URL-Konfiguration
   - `wsgi.py` - WSGI-Anwendung
